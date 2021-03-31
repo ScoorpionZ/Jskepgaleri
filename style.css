@@ -1,0 +1,50 @@
+@charset "utf-8";
+body{
+    background-color: darkslategray;
+}
+
+main {/*szülőelem*/
+    display:grid;
+    grid-template-areas:
+        "h h h h"
+        "s s s s"
+        "a a a a"
+        "f f f f"
+        ;
+    background-color: white;
+}
+
+header{
+    grid-area:h;
+}
+
+
+section{
+    grid-area:s;
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+}
+
+
+
+article{
+    grid-area:a;
+}
+
+article{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    grid-gap:10px;
+}
+
+footer{
+    grid-area:f;
+}
+article>div{
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+#NagyKep>img{
+    width: 50%;
+}
